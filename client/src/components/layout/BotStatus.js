@@ -107,7 +107,6 @@ const BotStatus = ({ channels, date, pollBot, running, username }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       pollBot();
-      console.log('pollng');
     }, 1000);
 
     return () => {
