@@ -134,7 +134,7 @@ const Login = ({
       {!isAuthenticated && (
         <Button
           color='inherit'
-          href='https://id.twitch.tv/oauth2/authorize?client_id=9tur2hiygu3h8bczyds8l1dm29hzbv&redirect_uri=http://localhost:3000&response_type=token&scope=chat:edit
+          href='https://id.twitch.tv/oauth2/authorize?client_id=9tur2hiygu3h8bczyds8l1dm29hzbv&redirect_uri=http://ttvutils.com&response_type=token&scope=chat:edit
         chat:read channel:moderate whispers:edit
         whispers:read&force_verify=true'
         >
