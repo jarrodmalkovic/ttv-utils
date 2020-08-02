@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "cd client && npm install && npm run build && cd .. && npm install && node server"
+    "start": "cd client && npm clean-install && npm run build && cd .. && npm clean-install && node server"
   },
   "keywords": [],
   "author": "",
