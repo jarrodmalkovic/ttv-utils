@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "cd client && npm install && npm run build && cd .. && npm install && node server"
+    "start": "node server.js",
+    "azure": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client && npm run start"
   },
   "keywords": [],
   "author": "",
