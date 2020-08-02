@@ -37,8 +37,6 @@ export const startBot = (username, pass, channels, updated = false) => (
       channels: split,
     };
 
-    console.log(opts);
-
     client = new tmi.client(opts);
 
     client.on('message', onMessage);
