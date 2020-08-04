@@ -19,22 +19,29 @@ View the project [here](https://ttvutils.com/)
 
 - Clone this repo to your local machine using `https://github.com/jarrodmalkovic/ttv-utils.git`
 
-### Install server dependencies
+### Install dependencies
+
+- Install server dependencies
 
 ```bash
 npm install
 ```
 
-### Install client dependencies
+- Install client dependencies
 
 ```bash
+cd client
 npm install
 ```
 
-### Start server
+### Setting up Proccess Environment Variables
+
+- Make a new file with the name .env in the root folder. It should contain values for these 2 variables: `PORT`,`MONGO_URI`.
+
+### Run both Express & React from root
 
 ```bash
-npm start
+npm run dev
 ```
 
 ## Technologies
