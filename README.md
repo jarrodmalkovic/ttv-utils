@@ -1,15 +1,15 @@
 # TTVUtils
 
-A web app providing chat utilties to Twitch.TV
+A web app providing chat utilties for Twitch.TV
 
 ## Table of contents
 
-- [Live demo](#live-demo)
+- [Live site](#live-site)
 - [Run Locally](#run-locally)
 - [Technologies](#technologies)
 - [License](#license)
 
-## Live demo
+## Live site
 
 View the project [here](https://ttvutils.com/)
 
