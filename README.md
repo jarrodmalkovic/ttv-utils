@@ -11,7 +11,7 @@ A web app providing chat utilties for Twitch.TV
 
 ## Live site
 
-View the project [here](https://ttvutils.com/)
+View the project [here](http://ttvutils.com/)
 
 ## Run Locally
 
