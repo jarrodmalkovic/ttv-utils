@@ -15,7 +15,6 @@ export const setRainbowChat = (value, hex, def, colors) => {
   rainbow = value;
   if (!hex && !def && value) {
     textColors = colors.split(',');
-    console.log(textColors);
   }
 
   if (def) {
