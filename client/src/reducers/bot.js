@@ -23,7 +23,7 @@ export default function (state = initialState, action) {
 
   switch (type) {
     case LOGIN:
-      let [username, password] = payload;
+      const [username, password] = payload;
       return {
         ...state,
         isAuthenticated: true,
@@ -38,7 +38,7 @@ export default function (state = initialState, action) {
         running: false,
       };
     case SAVE_RAINBOW:
-      let { rainbow, def, colors, random, channels } = payload;
+      const { rainbow, def, colors, random, channels } = payload;
       return {
         ...state,
         rainbow,
@@ -48,7 +48,7 @@ export default function (state = initialState, action) {
         channels,
       };
     case AUTHENTICATE:
-      let [user, pass] = payload;
+      const [user, pass] = payload;
       return {
         ...state,
         username: user,
