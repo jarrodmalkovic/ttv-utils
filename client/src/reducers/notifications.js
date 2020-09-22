@@ -21,7 +21,6 @@ export default (state = defaultState, action) => {
           },
         ],
       };
-
     case CLOSE_SNACKBAR:
       return {
         ...state,
@@ -31,7 +30,6 @@ export default (state = defaultState, action) => {
             : { ...notification }
         ),
       };
-
     case REMOVE_SNACKBAR:
       return {
         ...state,
