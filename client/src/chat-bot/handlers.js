@@ -14,7 +14,7 @@ let textHex = false;
 export const setRainbowChat = (value, hex, def, colors) => {
   rainbow = value;
   if (!hex && !def && value) {
-    textColors = colors.split(',');
+    textColors = colors.split(',').map(color => color.trim());
   }
 
   if (def) {
