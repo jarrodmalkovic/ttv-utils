@@ -16,7 +16,6 @@ export const lineSpam = function (target, lines, timeout) {
 
 export const pyramid = function (target, height, timeout, emote) {
   const bot = getBot();
-  console.log(bot.__proto__);
   let line = 1;
   for (let i = 1; i <= height - 1; i++) {
     setTimeout(function () {
