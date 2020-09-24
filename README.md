@@ -1,6 +1,6 @@
 # TTVUtils
 
-A web app providing chat utilties for Twitch.TV
+A web app providing chat utilties for twitch.tv
 
 ## Table of contents
 
