@@ -4,14 +4,9 @@ A web app providing chat utilties for twitch.tv
 
 ## Table of contents
 
-- [Live site](#live-site)
 - [Run Locally](#run-locally)
 - [Technologies](#technologies)
 - [License](#license)
-
-## Live site
-
-View the project [here](http://ttvutils.com/)
 
 ## Run Locally
 
