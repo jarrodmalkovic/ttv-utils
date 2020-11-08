@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "buildcommand": "npm install && cd client && npm run build && cd .. && node server",
+    "buildcommand": "npm install --prefix client && npm run build --prefix client && node server",
     "start": "node server"
   },
   "keywords": [],
