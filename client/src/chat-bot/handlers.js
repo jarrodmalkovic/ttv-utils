@@ -39,10 +39,6 @@ export const onMessage = function (target, context, msg, self) {
   if (saidByMe(context) && rainbow) {
     increaseMsgCount(textColors);
     changeNameColor(target, textHex, textColors);
-
-    if (self) {
-      return;
-    }
   }
 };
 
