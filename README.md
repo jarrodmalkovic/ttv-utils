@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/538e1071-834d-4a60-824a-d3a717cd5a0f/deploy-status)](https://app.netlify.com/sites/eager-ride-1bfc9d/deploys)
+
 # TTVUtils
 
 A web app providing chat utilties for twitch.tv
