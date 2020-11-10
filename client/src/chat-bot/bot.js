@@ -1,7 +1,5 @@
 import { onMessage, onConnected } from './handlers';
-
 const tmi = require('tmi.js');
-
 let client;
 
 export const createClient = (username, pass, channels) => {
@@ -10,21 +8,18 @@ export const createClient = (username, pass, channels) => {
     client = null;
   }
 
-  const opts = {
+  client = new tmi.Client({
     connection: {
-        secure: true,
-        reconnect: true
+        secure: true
     }, identity: {
       username: username,
       password: pass,
     },
     channels: channels.split(','),
-  };
-  client = new tmi.client(opts);
+  });
 
   client.on('message', onMessage);
   client.on('connected', onConnected);
-
   client.connect();
 
   if (client.reason !== '') {
