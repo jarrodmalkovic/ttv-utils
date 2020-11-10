@@ -11,7 +11,10 @@ export const createClient = (username, pass, channels) => {
   }
 
   const opts = {
-    identity: {
+    connection: {
+        secure: true,
+        reconnect: true
+    }, identity: {
       username: username,
       password: pass,
     },
