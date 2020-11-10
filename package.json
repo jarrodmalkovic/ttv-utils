@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "netlify": "cd client && npm run build",
+    "netlify": "cd client && npm intall && npm run build",
     "start": "node server"
   },
   "keywords": [],
