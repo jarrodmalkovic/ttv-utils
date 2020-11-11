@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import FeelsDankMan from '../../img/FeelsDankMan.jpg';
+import pokiW from '../../img/pokiW.png';
 
 const useStyles = makeStyles({
   root: {
@@ -21,7 +21,7 @@ function NotFound() {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      <img className={classes.img} src={FeelsDankMan} alt='FeelsDankMan' />
+      <img className={classes.img} src={pokiW} alt='pokiW' />
       <h2 className={classes.text}>ERROR 404: Page Not Found</h2>
     </div>
   );
