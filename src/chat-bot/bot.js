@@ -1,5 +1,6 @@
 import { onMessage, onConnected } from './handlers';
 const tmi = require('tmi.js');
+
 let client;
 
 export const createClient = (username, pass, channels) => {
@@ -10,7 +11,7 @@ export const createClient = (username, pass, channels) => {
 
   client = new tmi.Client({
     connection: {
-        secure: true
+      secure: true
     }, identity: {
       username: username,
       password: pass,

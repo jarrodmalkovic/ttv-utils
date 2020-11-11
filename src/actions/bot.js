@@ -7,14 +7,11 @@ import {
 } from './types';
 import React from 'react';
 import Button from '@material-ui/core/Button';
-
 import { onMessage, onConnected } from '../chat-bot/handlers';
-
 import {
   enqueueSnackbar as enqueueSnackbarAction,
   closeSnackbar as closeSnackbarAction,
 } from './notifications';
-
 const tmi = require('tmi.js');
 const axios = require('axios');
 
@@ -29,19 +26,18 @@ export const startBot = (username, pass, channels, updated = false) => (
   try {
     const split = channels ? channels.split(',') : [];
 
-    const opts = {
-      identity: {
+    client = new tmi.client({
+      connection: {
+        secure: true
+      }, identity: {
         username: username,
         password: `oauth:${pass}`,
       },
       channels: split,
-    };
-
-    client = new tmi.client(opts);
+    });
 
     client.on('message', onMessage);
     client.on('connected', onConnected);
-
     client.connect();
 
     dispatch({
@@ -60,7 +56,6 @@ export const startBot = (username, pass, channels, updated = false) => (
       },
     });
   } catch (err) {
-    console.log(err);
     dispatch({
       type: BOT_ERROR,
     });
@@ -186,7 +181,6 @@ export const authenticate = (accessToken) => async (dispatch) => {
 
     const res = await axios.get('https://api.twitch.tv/helix/users', config);
     const user = res.data.data[0];
-    console.log(user);
 
     dispatch({
       type: AUTHENTICATE,

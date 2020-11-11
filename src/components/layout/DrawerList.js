@@ -44,27 +44,6 @@ const DrawerList = () => {
           <ListItemText primary='Auto Say Lines' />
         </ListItem>
       </List>
-      <Divider />
-      <List>
-        <ListItem
-          button
-          component={NavLink}
-          to='/suggestions'
-          activeStyle={{ backgroundColor: '#e4e4e4', color: 'black' }}
-          key='Suggest a Feature'
-        >
-          <ListItemText primary='Suggest a Feature' />
-        </ListItem>
-        <ListItem
-          button
-          activeStyle={{ backgroundColor: '#e4e4e4', color: 'black' }}
-          component={NavLink}
-          to='/report'
-          key='Report a Problem'
-        >
-          <ListItemText primary='Report a Problem' />
-        </ListItem>
-      </List>
     </Fragment>
   );
 };
