@@ -1,5 +1,4 @@
-import { client } from '../actions/bot';
-import { user } from '../actions/bot;'
+import { client, user } from '../actions/bot';
 
 let messageCount = 0;
 let color = 0;
