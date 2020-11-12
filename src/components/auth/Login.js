@@ -2,23 +2,14 @@ import React, { useState, useEffect, Fragment } from 'react';
 
 import { makeStyles, withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
-import Dialog from '@material-ui/core/Dialog';
 import MuiDialogTitle from '@material-ui/core/DialogTitle';
 import MuiDialogContent from '@material-ui/core/DialogContent';
 import MuiDialogActions from '@material-ui/core/DialogActions';
 import IconButton from '@material-ui/core/IconButton';
-import SettingsIcon from '@material-ui/icons/Settings';
 import CloseIcon from '@material-ui/icons/Close';
 import Typography from '@material-ui/core/Typography';
-import TextField from '@material-ui/core/TextField';
-import { Link } from '@material-ui/core';
-
 import { startBot, stopBot, authenticate } from '../../actions/bot';
 import { connect } from 'react-redux';
-
-const axios = require('axios');
-
-const bot = require('../../chat-bot/bot');
 
 const useStyles = makeStyles((theme) => ({
   button: {
@@ -148,10 +139,10 @@ const Login = ({
               Stop Bot
             </Button>
           ) : (
-            <Button onClick={handleStart} color='inherit'>
-              Start Bot
-            </Button>
-          )}
+              <Button onClick={handleStart} color='inherit'>
+                Start Bot
+              </Button>
+            )}
         </Fragment>
       )}
     </div>

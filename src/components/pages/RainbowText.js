@@ -46,13 +46,9 @@ const RainbowText = ({
   const classes = useStyles();
 
   const [colors, setColors] = useState(colorsState);
-
   const [rainbow, setRainbow] = useState(rainbowState);
-
   const [random, setRandom] = useState(randomState);
-
   const [def, setDefault] = useState(defaultState);
-
   const [channels, setChannels] = useState(channelState);
 
   const onSubmit = (e) => {
