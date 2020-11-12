@@ -1,4 +1,5 @@
-import { getBot } from '../actions/bot';
+import { client } from '../actions/bot';
+import { user } from '../actions/bot;'
 
 let messageCount = 0;
 let color = 0;
@@ -33,7 +34,7 @@ export const getRandomHex = () => {
   return hex;
 };
 
-export const increaseMsgCount = function (colors) {
+export const increaseMsgCount = (colors) => {
   color = messageCount % colors.length;
   messageCount++;
 
@@ -42,16 +43,14 @@ export const increaseMsgCount = function (colors) {
   );
 };
 
-export const changeNameColor = function (channelName, hex, colors) {
-  const bot = getBot();
-
+export const changeNameColor = (channelName, hex, colors) => {
   if (hex) {
-    bot.say(channelName, '/color ' + getRandomHex());
+    client.say(channelName, '/color ' + getRandomHex());
   } else {
-    bot.say(channelName, '/color ' + colors[color]);
+    client.say(channelName, '/color ' + colors[color]);
   }
 };
 
-export const saidByMe = function (context) {
-  return context['display-name'] == 'dab_or_get_banned';
+export const saidByMe = (context) => {
+  return context['display-name'] == user;
 };

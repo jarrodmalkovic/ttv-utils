@@ -36,7 +36,7 @@ export const onConnected = function (addr, port) {
 };
 
 export const onMessage = function (target, context, msg, self) {
-  if (self && rainbow) {
+  if (saidByMe(context) && rainbow) {
     increaseMsgCount(textColors);
     changeNameColor(target, textHex, textColors);
   }

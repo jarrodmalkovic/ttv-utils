@@ -15,7 +15,8 @@ import {
 const tmi = require('tmi.js');
 const axios = require('axios');
 
-let client;
+export let client;
+export let user;
 let prev;
 
 export const startBot = (username, pass, channels, updated = false) => (
@@ -25,6 +26,7 @@ export const startBot = (username, pass, channels, updated = false) => (
   const closeSnackbar = (...args) => dispatch(closeSnackbarAction(...args));
   try {
     const split = channels ? channels.split(',') : [];
+    user = username;
 
     client = new tmi.client({
       connection: {
@@ -104,10 +106,6 @@ export const stopBot = () => async (dispatch) => {
       },
     });
   }
-};
-
-export const getBot = () => {
-  return client;
 };
 
 export const pollBot = () => (dispatch) => {
