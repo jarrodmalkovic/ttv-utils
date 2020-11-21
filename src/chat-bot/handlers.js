@@ -1,4 +1,4 @@
-import { increaseMsgCount, changeNameColor, saidByMe } from './helpers';
+import { increaseMsgCount, changeNameColor } from './helpers';
 
 let rainbow = false;
 let textColors = [
@@ -36,7 +36,7 @@ export const onConnected = function (addr, port) {
 };
 
 export const onMessage = function (target, context, msg, self) {
-  if (saidByMe(context) && rainbow) {
+  if (self && rainbow) {
     increaseMsgCount(textColors);
     changeNameColor(target, textHex, textColors);
   }

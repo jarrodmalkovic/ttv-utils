@@ -49,7 +49,3 @@ export const changeNameColor = (channelName, hex, colors) => {
     client.say(channelName, '/color ' + colors[color]);
   }
 };
-
-export const saidByMe = (context) => {
-  return context['display-name'] == user;
-};
