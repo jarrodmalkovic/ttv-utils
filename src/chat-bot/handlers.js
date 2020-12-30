@@ -37,7 +37,10 @@ export const onConnected = function (addr, port) {
 
 export const onMessage = function (target, context, msg, self, username) {
 	console.log(target, context, msg, self, username);
-	if (self && rainbow) {
+	if (
+		context['display-name'].toLowerCase() === username.toLowerCase() &&
+		rainbow
+	) {
 		increaseMsgCount(textColors);
 		changeNameColor(target, textHex, textColors);
 	}
