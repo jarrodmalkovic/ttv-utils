@@ -16,35 +16,22 @@ A web app providing chat utilties for twitch.tv
 
 ### Install dependencies
 
-- Install server dependencies
-
 ```bash
 npm install
 ```
 
-- Install client dependencies
+### Start the react development server
 
 ```bash
-cd client
-npm install
-```
-
-### Setting up Proccess Environment Variables
-
-- Make a new file with the name .env in the root folder. It should contain values for these 2 variables: `PORT`,`MONGO_URI`.
-
-### Run both Express & React from root
-
-```bash
-npm run dev
+npm start
 ```
 
 ## Technologies
 
 Project is created with:
 
-- Node.js, MongoDB, React, Redux, Material-UI
+- Javascript, React, Redux, Material-UI and deployed using Netlify
 
 ## License
 
-This project is licensed under the MIT License
+This project is licensed under the Unlicense license
