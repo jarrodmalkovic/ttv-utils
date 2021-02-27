@@ -1,5 +1,3 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/34ef9dc2-aa89-4240-92d2-5a506adc66c2/deploy-status)](https://app.netlify.com/sites/musing-pasteur-48063e/deploys)
-
 # TTVUtils
 
 A web app providing chat utilties for twitch.tv
