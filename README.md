@@ -1,4 +1,4 @@
-# TTVUtils
+# Twitch Utils
 
 A web app providing chat utilties for twitch.tv
 
@@ -12,7 +12,7 @@ A web app providing chat utilties for twitch.tv
 
 ### Clone
 
-- Clone this repo to your local machine using `https://github.com/jarrodmalkovic/ttv-utils.git`
+- Clone this repo to your local machine using `https://github.com/jarrodmalkovic/twitch-utils.git`
 
 ### Install dependencies
 
